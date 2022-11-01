@@ -17,7 +17,6 @@ struct ContactListDetailView: View {
                     Label(person.phone, systemImage: "phone")
                     Label(person.email, systemImage: "envelope")
                 }
-
             }
             .navigationTitle("Contact Detail List")
         }

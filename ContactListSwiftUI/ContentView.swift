@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
 
-    private let PersonList: [Person] = Person.getPersons()
+    private let personList = Person.getPersons()
 
     var body: some View {
         TabView {
-            ContactListView(personList: PersonList)
+            ContactListView(personList: personList)
                 .tabItem {
                     Label("Contacts", systemImage: "person.3")
                 }
-            ContactListDetailView(personList: PersonList)
+            ContactListDetailView(personList: personList)
                 .tabItem {
                     Label("Numbers", systemImage: "phone")
                 }

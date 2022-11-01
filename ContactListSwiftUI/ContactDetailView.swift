@@ -12,7 +12,6 @@ struct ContactDetailView: View {
     let person: Person
 
     var body: some View {
-
         List {
             HStack() {
                 Spacer()
@@ -28,7 +27,6 @@ struct ContactDetailView: View {
         }
         .navigationTitle(person.fullName)
     }
-
 }
 
 struct ContactDetailView_Previews: PreviewProvider {
